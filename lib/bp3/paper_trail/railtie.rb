@@ -19,6 +19,7 @@ module Bp3
 
             class Version
               include Bp3::Core::Ransackable
+              include Bp3::Core::Displayable
             end
           end
         end
