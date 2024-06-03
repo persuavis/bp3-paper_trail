@@ -13,7 +13,7 @@ module Bp3
             # reopen ModelConfig to override version_class
             class ModelConfig
               def version_class
-                ::Version # TODO: make this configurable
+                ::Bp3::PaperTrail.version_class
               end
             end
 
