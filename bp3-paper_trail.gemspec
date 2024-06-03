@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'actionpack', ['>= 7.1.2', '< 8']
   spec.add_dependency 'activesupport', ['>= 7.1.2', '< 8']
   spec.add_dependency 'bp3-core', ['>= 0.1', '< 1']
   spec.add_dependency 'paper_trail', '~> 15.1'
