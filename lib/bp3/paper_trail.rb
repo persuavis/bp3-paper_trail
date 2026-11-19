@@ -11,7 +11,7 @@ module Bp3
     mattr_accessor :version_class_name
 
     def self.version_class
-      @@version_class ||= version_class_name.constantize # rubocop:disable Style/ClassVars
+      version_class_name.constantize
     end
   end
 end
